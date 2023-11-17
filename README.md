@@ -5,7 +5,7 @@ This project is a task designed for React developers. It serves as a starting po
 
 ## Demo
 
-You can experience the app live at []().
+You can experience the app live at [randomuser-task.netlify.app](https://randomuser-task.netlify.app/).
 
 ## Features
 
@@ -21,6 +21,7 @@ You can experience the app live at []().
 ## Installation
 To install and set up the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/task-for-react-dev.git`
+1. Clone the repository: `git clone https://github.com/Trayshmhirk/task-for-react-dev.git`
 2. Navigate to the project directory: `cd task-for-react-dev`
 3. Install the dependencies: `npm install`
+4. Start the application: `npm run dev`

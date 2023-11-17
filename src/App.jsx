@@ -35,7 +35,7 @@ function App() {
             as is the user's name. 
          */
          // construct the url to fetch users data based on the values passed to the endpoint.
-         let url = 'https://randomuser.me/api/?results=12';
+         let url = 'https://randomuser.me/api/?results=32';
 
          if(nationalityFilter) {
             url += `&nat=${nationalityFilter}`;
@@ -130,7 +130,13 @@ function App() {
 
          </div>
          
-         <UserListWithLoader isLoading={isLoading} users={filterUsersByNameAndAgeRange} />
+         {
+            filterUsersByNameAndAgeRange.length ? (
+               <UserListWithLoader isLoading={isLoading} users={filterUsersByNameAndAgeRange} />
+            ) : (
+               <div>{`"No results found"`}</div>
+            )
+         }
       </div>
    )
 }
