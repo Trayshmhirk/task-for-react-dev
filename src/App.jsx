@@ -134,7 +134,11 @@ function App() {
             filterUsersByNameAndAgeRange.length ? (
                <UserListWithLoader isLoading={isLoading} users={filterUsersByNameAndAgeRange} />
             ) : (
-               <div>{`"No results found"`}</div>
+               isLoading ? (
+                  <UserListWithLoader /> // Render loader
+               ) : (
+                  <div>No results found</div>
+               )
             )
          }
       </div>
