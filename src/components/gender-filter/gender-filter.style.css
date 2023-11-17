@@ -1,0 +1,17 @@
+.gender-filter {
+   width: 150px;
+   display: flex;
+   border: none;
+   background: #fff;
+   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.103);
+   outline: none;
+   border-radius: 7px;
+   height: 50px;
+   line-height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+   .gender-filter {
+      width: 100%;
+   }
+}
